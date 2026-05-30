@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #0A2540;
+  --color-secondary: #FF7A00;
+  --color-accent: #1E88E5;
+  --color-background: #FFFFFF;
+  --color-background-alt: #F5F7FA;
+  --color-text-main: #111827;
+  --color-text-muted: #4B5563;
+  --font-heading: var(--font-montserrat), sans-serif;
+  --font-body: var(--font-poppins), sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #FFFFFF;
+  --foreground: #111827;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  .glass-dark {
+    @apply bg-primary/80 backdrop-blur-lg border border-white/10;
+  }
+  .animate-spin-slow {
+    animation: spin 15s linear infinite;
+  }
+}
+
+/* Base Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
 }
