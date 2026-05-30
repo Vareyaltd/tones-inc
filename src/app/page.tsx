@@ -10,9 +10,9 @@ import { FaBridge, FaOilWell } from "react-icons/fa6";
 
 export default function Home() {
   const heroImages = [
-    "https://images.unsplash.com/photo-1541888087850-25bcaf780c10?q=80&w=2940&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2787&auto=format&fit=crop"
+    "/images/tones_hero_1780087989204.png",
+    "/images/tones_hero_2_1780090094339.png",
+    "/images/tones_hero_3_1780090115187.png"
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -137,13 +137,13 @@ export default function Home() {
               >
                 <div className="grid grid-cols-2 gap-4">
                   <div className="relative h-64 rounded-xl overflow-hidden col-span-2 shadow-lg">
-                    <Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop" alt="Building" fill className="object-cover" unoptimized />
+                    <Image src="/images/tones_about_1_1780088082361.png" alt="Building" fill className="object-cover" unoptimized />
                   </div>
                   <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                    <Image src="https://images.unsplash.com/photo-1504307651254-35680f356f12?q=80&w=2768&auto=format&fit=crop" alt="Construction" fill className="object-cover" unoptimized />
+                    <Image src="/images/tones_about_2_1780088099511.png" alt="Construction" fill className="object-cover" unoptimized />
                   </div>
                   <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
-                    <Image src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2944&auto=format&fit=crop" alt="Solar" fill className="object-cover" unoptimized />
+                    <Image src="/images/tones_about_3_1780088135004.png" alt="Solar" fill className="object-cover" unoptimized />
                   </div>
                 </div>
                 {/* Orange Box Overlay */}
@@ -278,10 +278,10 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: "Lagos Coastal Highway Development", img: "https://images.unsplash.com/photo-1525208479599-4c740ee307db?q=80&w=2940&auto=format&fit=crop", tag1: "Road Construction", tag2: "Lagos State", date: "2023 - Ongoing" },
-                { title: "Abuja Smart Solar Grid", img: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2940&auto=format&fit=crop", tag1: "Energy", tag2: "Abuja", date: "2022 - Ongoing" },
-                { title: "Port Harcourt Industrial Hub", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2940&auto=format&fit=crop", tag1: "Industrial", tag2: "Rivers State", date: "2021 - Ongoing" },
-                { title: "Northern Water Infrastructure Initiative", img: "https://images.unsplash.com/photo-1520698058204-610e7403aeb0?q=80&w=2940&auto=format&fit=crop", tag1: "Water Engineering", tag2: "Kano State", date: "2022 - Ongoing" }
+                { title: "Lagos Coastal Highway Development", img: "/images/tones_projects_1_1780088032709.png", tag1: "Road Construction", tag2: "Lagos State", date: "2023 - Ongoing" },
+                { title: "Abuja Smart Solar Grid", img: "/images/tones_projects_2_1780088154405.png", tag1: "Energy", tag2: "Abuja", date: "2022 - Ongoing" },
+                { title: "Port Harcourt Industrial Hub", img: "/images/tones_projects_3_1780088175129.png", tag1: "Industrial", tag2: "Rivers State", date: "2021 - Ongoing" },
+                { title: "Northern Water Infrastructure Initiative", img: "/images/tones_projects_4_1780088206662.png", tag1: "Water Engineering", tag2: "Kano State", date: "2022 - Ongoing" }
               ].map((project, idx) => (
                 <motion.div 
                   key={idx} 
@@ -349,7 +349,7 @@ export default function Home() {
                 className="lg:w-1/2 relative min-h-[400px]"
               >
                 <Image 
-                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=2787&auto=format&fit=crop" 
+                  src="/images/tones_careers_1780088014269.png" 
                   alt="Engineering team" 
                   fill 
                   className="object-cover" 
